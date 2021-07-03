@@ -1,0 +1,564 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* Слайдер в шапке */
+
+.header {
+	position: relative;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color: #fff;
+	width: 33px;
+	height: 33px;
+	opacity: 1;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.swiper-pagination-bullet-active {
+	border: 2px solid rgba(255, 0, 67, 1);
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 5px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: 95px;
+	left: auto;
+	right: 130px;
+	width: 130px;
+}
+/* Шапка */
+
+.header {
+	position: relative;
+	margin: 0 0 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header__top {
+	max-width: 1170px;
+	width: 100%;
+	position: absolute;
+	top: 60px;
+	margin: 0 auto;
+	z-index: 40;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo__image {
+	margin: 0 7px 0 0;
+}
+
+.logo__title {
+	font-family: Montserrat;
+	font-size: 13.2px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.logo__text {
+	font-family: Montserrat;
+	font-size: 13.2px;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+}
+
+.header__links {
+	display: flex;
+	align-items: center;
+	max-width: 389px;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.social {
+	max-width: 127px;
+	width: 100%;
+}
+
+.social_increase:hover {
+	transform: scale(1.3);
+	display: inline-block;
+}
+
+.social__list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.facebook {
+	width: 19px;
+}
+
+.tel a {
+	font-family: Montserrat;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+}
+
+.tel a:hover {
+	transform: scale(1.1);
+	display: inline-block;
+}
+
+.body-header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 1170px;
+	width: 100%;
+	z-index: 40;
+}
+
+.body-header__container {
+	max-width: 617px;
+}
+
+.body-header__title {
+	font-family: Montserrat;
+	font-size: 40px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin: 0 0 30px 0;
+	position: relative;
+}
+
+.body-header__title::after {
+	content: "";
+	width: 94px;
+	height: 3px;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 65px;
+	left: 0;
+}
+
+.body-header__text {
+	font-family: Montserrat;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	margin: 0 0 30px 0;
+}
+
+.body-header__button a{
+	text-transform: uppercase;
+	max-width: 250px;
+	width: 100%;
+	height: 60pX;
+	border: 2px solid #c51241;
+	box-shadow: 0px 12px 101px 0px rgba(197,18,65,0.25);
+	border-radius: 10px;
+	font-family: Montserrat;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Услуги */
+
+.services__container {
+	margin: 0 0 90px 0;
+}
+
+.services__title {
+	font-family: Montserrat;
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin: 0 0 90px 0;
+	text-transform: uppercase;
+}
+
+.services__row {
+	display: flex;
+	margin: 0 -15px;
+}
+
+.column {
+	flex: 0 1 25%;
+	padding: 0 15px;
+}
+
+.column__item {
+	text-align: center;
+}
+
+.column__image {
+	margin: 0 0 15px 0;
+}
+
+.column__title {
+	font-family: Montserrat;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin: 0 0 15px 0;
+}
+
+.column__text {
+	font-family: Montserrat;
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+/* Биография */
+
+.biography {
+	overflow: hidden;
+	background-color: #efefef;
+	padding: 90px 0 90px 0;
+	margin: 0 0 75px 0;
+}
+
+.biography__content {
+	flex: 0 0 100%;
+	display: flex;
+}
+
+.biography__container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.biography__body {
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+}
+
+.biography__title {
+	font-family: Montserrat;
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin: 0 0 40px 0;
+}
+
+.biography__text {
+	margin: 0 0 40px 0;
+	font-family: Montserrat;
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+.signature {
+	display: flex;
+	align-self: flex-end;
+	align-items: center;
+}
+
+.signature__name {
+	font-family: Montserrat;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin: 0 10px 0 0;
+}
+
+.biography__image img {
+	max-width: 100%;
+}
+
+@media (min-width: 767px) {
+	.biography {
+		display: flex;
+	}
+
+	.biography__image {
+		position: relative;
+		flex: 0 0 44%;
+		transform: translate(-100%, 0);
+	}
+
+	.biography__image img {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.biography__body {
+		width: 56%;
+		padding: 0 25px 0 0;
+	}
+}
+
+/* Оборудование */
+
+.equipment__title {
+	font-family: Montserrat;
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin: 0 0 40px 0;
+}
+
+.column-equipment {
+	display: flex;
+	margin: 0 0 80px 0;
+	align-items: center;
+}
+
+.column-equipment__image {
+	margin: 0 54px 0 0;
+}
+
+.column-equipment__title {
+	font-family: Montserrat;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin: 0 0 22px 0;
+}
+
+.column-equipment__text {
+	font-family: Montserrat;
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #000000;
+	max-width: 600px;
+}
+
+/* История */
+
+.history {
+	background-color: #efefef;
+	padding: 90px 0;
+	margin: 0 0 80px 0;
+}
+
+.history__container {
+	display: flex;
+}
+
+.history__content {
+	margin: 0 70px 0 0;
+}
+
+.history__title {
+	font-family: Montserrat;
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin: 0 0 29px 0;
+}
+
+.history__text {
+	font-family: Montserrat;
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+.history1 {
+	margin: 0 0 75px 0;
+}
+
+/* Альбомы */
+
+.albums__title {
+	font-family: Montserrat;
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin: 0 0 50px 0;
+}
+.albums__row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -38px;
+}
+
+.albums__column {
+	flex: 0 1 33.333%;
+	padding: 0 38px;
+	margin: 0 0 75px 0;
+}
+
+.column-albums__image {
+	max-width: 339px;
+}
+
+.column-albums__image img{
+	max-width: 339px;
+}
+
+.column-albums__title {
+	font-family: Montserrat;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin: 0 0 13px 0;
+}
+
+.column-albums__text {
+	font-family: Montserrat;
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+.column-albums__year {
+	font-family: Montserrat;
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+/* Подвал */
+
+.footer {
+	position: relative;
+}
+
+.footer__background {
+	width: 100%;
+}
+
+.footer__container {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	max-width: 1170px;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
